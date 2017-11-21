@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spnSubject"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF99CC" />
+
+    <EditText
+        android:id="@+id/txtnotes"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"
+                android:text="start"
+                android:layout_weight="1.0"/>
+                
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStop"
+                android:text="stop"
+                android:layout_weight="1.0"/>
+                
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFormat"
+                android:text="Format (mp4)"
+                android:visibility="gone"
+                android:layout_weight="1.0"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>
